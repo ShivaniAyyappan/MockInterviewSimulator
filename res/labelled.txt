@@ -1,0 +1,41 @@
+# question id|label|answer   (GOOD -> band HIGH >=7, PARTIAL -> MID 4 to <7, POOR and STUFFED -> LOW <4)
+T03|GOOD|An abstract class can keep state in instance variables and have constructors, and it can mix abstract methods with ordinary ones, but a class can only extend one of them. An interface is a contract made of abstract methods, with default methods allowed, and a class can implement multiple interfaces, so that is how Java supports multiple inheritance of type.
+T03|PARTIAL|An abstract class is a class that cannot be instantiated directly and it can have abstract methods which the subclasses have to override. An interface is something a class implements.
+T03|POOR|Both of these are used in Java programs and I have used them during my college lab sessions for some small programs that we wrote in the second year.
+T03|STUFFED|abstract class interface multiple inheritance constructor default method abstract method implements
+T06|GOOD|A HashMap calls hashCode on the key and uses the hash to pick a bucket in an internal array. If two keys land in the same bucket that is a collision, and the entries are chained in a linked list, which becomes a red black tree when it gets long, and equals is used to find the exact key. When the load factor is crossed the table is resized and every entry is rehashed.
+T06|PARTIAL|HashMap stores key value pairs. It uses the hashcode of the key to find a bucket where the entry is placed, and if two keys go to the same bucket there is a collision which is handled with a linked list.
+T06|POOR|HashMap is a very commonly used class in Java and most developers use it every day because it is convenient for storing data in programs.
+T06|STUFFED|hashcode hash bucket collision chaining linked list equals load factor resize rehash red black tree
+T09|GOOD|Synchronization is needed because when many threads touch the same shared data a race condition can leave that data inconsistent. Using the synchronized keyword or a lock gives mutual exclusion, so only one thread can be inside the critical section at a time, based on the monitor of the object. If locks are used carelessly a deadlock can happen.
+T09|PARTIAL|In multithreading, several threads may use the same variable at the same time and that can give wrong results. The synchronized keyword is used so that only one thread can run that code at a time using a lock.
+T09|POOR|Java is a language where we can write programs for many different purposes and it has a lot of features that make coding easier for everyone.
+T09|STUFFED|thread synchronized lock mutual exclusion race condition inconsistent monitor critical section deadlock wait notify
+T12|GOOD|Binary search works only on a sorted array. You compare the target with the middle element, and if they are not equal you throw away the half that cannot contain the key and repeat on the other half. Because the search space halves each time the time complexity is O(log n).
+T12|PARTIAL|Binary search finds an element in a sorted array by looking at the middle element and comparing it with the value we want, and then we continue searching in one part of the array.
+T12|POOR|Searching is an important operation in programming and we do it all the time when we look for data in the programs that we build.
+T12|STUFFED|sorted middle half O(log n) compare target
+T16|GOOD|A primary key uniquely identifies every row of a table, it cannot be null, and a table can have only one primary key. A foreign key is a column that refers to the primary key of another table, which creates a relationship between the tables and enforces referential integrity.
+T16|PARTIAL|The primary key is a column that uniquely identifies each row in the table and it cannot contain null values. The foreign key is also a kind of key used in tables.
+T16|POOR|Keys are used in databases and I learned about them in my database course where we created a few tables for a small library project.
+T16|STUFFED|primary key unique not null foreign key references relationship referential integrity one primary key
+T18|GOOD|Atomicity means a transaction either completes fully or not at all, like all or nothing. Consistency means the database moves from one valid state to another. Isolation means concurrent transactions do not interfere with each other, and durability means once a transaction is committed the changes are permanent even after a crash.
+T18|PARTIAL|ACID stands for four properties of a transaction. Atomicity means all or nothing, and durability means that after a commit the data stays permanent in the database.
+T18|POOR|Transactions are very important in banking applications and a lot of money is handled by such applications every single day around the world.
+T18|STUFFED|atomicity consistency isolation durability transaction commit
+T20|GOOD|A process is an independent program in execution and it has its own memory and address space. A thread is a lightweight unit that lives within a process and shares the memory and resources of that process with other threads, so a context switch between threads has much less overhead.
+T20|PARTIAL|A process is a program that is running and it has its own separate memory space. A thread is smaller than a process and is part of it.
+T20|POOR|Both are concepts from the operating systems subject which has many topics and we studied them in the fourth semester of the course.
+T20|STUFFED|process independent own memory thread lightweight shared memory context switch overhead resources
+H01|GOOD|I am a final year computer science engineering student with a strong interest in programming. My main skills are Java, data structures and databases, and I built a mock interview simulator and completed an internship where I worked on a billing module. I am looking for a software developer role where I can keep learning and grow my career, and I am passionate about solving problems.
+H01|PARTIAL|I am a final year engineering student at a college in Chennai and I know Java and Python programming. I did a small project during my course.
+H01|POOR|My name is on the application and I come from Chennai where I live with my family and I like watching movies in my free time.
+H01|STUFFED|student engineering skills java project internship experience goal career passionate
+H04|GOOD|During our final year project, two teammates disagreed about the design, which delayed the work. My task as team coordinator was to keep the project on schedule. I organised a meeting where each person explained their approach, I suggested testing both ideas quickly, and we chose the faster design. The outcome was that we delivered on time, and I learned that listening first resolves most conflicts.
+H04|PARTIAL|In one project there was a conflict between two team members about the work. I talked to both of them and we discussed it and then continued the project.
+H04|POOR|I have always had a very good relationship with everybody that I have worked with and I enjoy being part of any group of people.
+H04|STUFFED|situation project team task responsible action i decided result resolved learned lesson
+H07|GOOD|When there is a tight deadline I first prioritise tasks and make a schedule, then I break the work into smaller tasks and go step by step. I stay calm and focused, and I communicate early with my team about any risk. For example, I once finished a project module two days before the deadline using this approach.
+H07|PARTIAL|I try to stay calm under pressure and I plan my work carefully so that I can finish everything before the deadline arrives.
+H07|POOR|Pressure is something that everyone faces in life and I think that it is very important to be happy and to enjoy whatever work you do.
+H07|STUFFED|prioritise plan schedule calm focus communicate break down tasks example deadline

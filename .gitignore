@@ -1,0 +1,5 @@
+out/
+*.class
+sources.txt
+.idea/
+.vscode/
